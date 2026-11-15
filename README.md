@@ -6,6 +6,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation)
 [![GitHub Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation?style=social)](https://github.com/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation/stargazers)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <br/>
 
@@ -33,6 +34,8 @@
 - [⚖️ Feature & Architecture Comparison](#️-feature--architecture-comparison)
 - [💡 Key Selection Criteria & Engineering Trade-offs](#-key-selection-criteria--engineering-trade-offs)
 - [🤝 Contributing & Community Standards](#-contributing--community-standards)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📈 Star History](#-star-history)
 - [📄 License](#-license)
 
 ---
@@ -121,6 +124,25 @@ Contributions, tool recommendations, and updates are warmly welcomed! Please rev
 - 🕒 **Maintenance:** Open-source projects should demonstrate active maintenance (commits or releases within the past 12 months).
 - 🏷️ **Accuracy:** Include verified licensing, stack details, and precise pricing/free-tier terms.
 - 🔤 **Formatting:** Keep alphabetical or metric-based sorting intact within comparison tables.
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using **Awesome Native Mobile App QA & Automation**! 🙏
+
+If this curated guide has saved you research hours, helped you discover the right device cloud or test runner, or empowered your mobile testing pipeline, please consider supporting this project:
+
+- 🌟 **Star** this repository on GitHub to boost visibility for the developer & QA community.
+- 🍴 **Fork** and contribute back new frameworks, benchmark findings, and device lab insights.
+- 📢 **Share** this resource with your teammates, SDETs, and mobile engineering groups.
+- ☕ **Buy a Coffee / Sponsor**: Support ongoing maintenance, updates, and research by becoming a sponsor at the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**. Every sponsorship directly sustains community open-source work!
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Native-Mobile-App-QA-Automation&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Native-Mobile-App-QA-Automation&type=date&legend=top-left)
 
 ---
 
