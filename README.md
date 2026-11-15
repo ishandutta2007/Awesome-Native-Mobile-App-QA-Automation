@@ -5,7 +5,7 @@
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation/pulls)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation)
-[![GitHub Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation?style=social)](https://github.com/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation?style=social)](https://github.com/ishandutta2007/Awesome-Native-Mobile-App-QA-Automation/stargazers)
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 <br/>
@@ -63,9 +63,9 @@ Commercial, hosted mobile device clouds and automated quality assurance platform
 
 ## 🛠️ Open-Source Mobile Test Automation Frameworks
 
-Community-driven, open-source Native Mobile App QA and Automation frameworks, libraries, and device management tools. Sorted by GitHub star count in descending order:
+Community-driven, open-source Native Mobile App QA and Automation frameworks, libraries, and device management tools. Sorted by GitHub Stars_Count in descending order:
 
-| 📦 Repository & Framework | ⭐ Stars Badge | 💻 Stack & Language | 📱 Supported Platforms | ⚙️ Architecture & Distinguishing Capabilities |
+| 📦 Repository & Framework | ⭐ Stars_Badge | 💻 Stack & Language | 📱 Supported Platforms | ⚙️ Architecture & Distinguishing Capabilities |
 | :--- | :---: | :--- | :--- | :--- |
 | **[Appium](https://appium.io/)**<br/>`appium/appium` | [![Stars](https://img.shields.io/github/stars/appium/appium?style=social&color=white)](https://github.com/appium/appium/stargazers) | Node.js (Core), Java, Python, JS, C#, Ruby | 🍏 iOS & 🤖 Android | **The Industry WebDriver Standard:** Uses W3C WebDriver spec with pluggable drivers (XCUITest, UIAutomator2). Out-of-app automation, AI agent MCP support, and cross-platform unified API. |
 | **[Maestro](https://maestro.mobile.dev/)**<br/>`mobile-dev-inc/maestro` | [![Stars](https://img.shields.io/github/stars/mobile-dev-inc/maestro?style=social&color=white)](https://github.com/mobile-dev-inc/maestro/stargazers) | Declarative YAML, Kotlin/JS | 🍏 iOS, 🤖 Android, ⚛️ React Native, 🐦 Flutter | **Zero-Wait Flakiness Tolerance:** Blazingly fast declarative YAML testing. Operates via accessibility hierarchy without code compilation. Continuous hot-reload test loop. |
