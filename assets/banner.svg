@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0b0f19;border-radius:14px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.07)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="cardGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .grid-line { stroke: rgba(255, 255, 255, 0.04); stroke-width: 1; }
+    .pulse-orb { animation: orbPulse 6s ease-in-out infinite alternate; }
+    .float-card-1 { animation: floatSlow 5s ease-in-out infinite alternate; }
+    .float-card-2 { animation: floatMedium 4s ease-in-out infinite alternate 1s; }
+    .float-card-3 { animation: floatFast 4.5s ease-in-out infinite alternate 0.5s; }
+    .test-pulse { animation: testBlink 2s ease-in-out infinite; }
+    .scan-line { animation: scanDown 3.5s linear infinite; }
+
+    @keyframes orbPulse {
+      0% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      100% { transform: scale(1.2) translate(40px, 20px); opacity: 0.65; }
+    }
+    @keyframes floatSlow {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-12px); }
+    }
+    @keyframes floatMedium {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-15px); }
+    }
+    @keyframes floatFast {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-10px); }
+    }
+    @keyframes scanDown {
+      0% { transform: translateY(-80px); opacity: 0; }
+      50% { opacity: 0.8; }
+      100% { transform: translateY(160px); opacity: 0; }
+    }
+    @keyframes testBlink {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
+      50% { opacity: 0.4; filter: none; }
+    }
+  </style>
+
+  <!-- Deep Background Layer -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+
+  <!-- Subtle Blueprint Tech Grid -->
+  <g class="grid-layer">
+    <line x1="100" y1="0" x2="100" y2="360" class="grid-line" />
+    <line x1="250" y1="0" x2="250" y2="360" class="grid-line" />
+    <line x1="400" y1="0" x2="400" y2="360" class="grid-line" />
+    <line x1="550" y1="0" x2="550" y2="360" class="grid-line" />
+    <line x1="700" y1="0" x2="700" y2="360" class="grid-line" />
+    <line x1="850" y1="0" x2="850" y2="360" class="grid-line" />
+    <line x1="1000" y1="0" x2="1000" y2="360" class="grid-line" />
+    <line x1="0" y1="70" x2="1200" y2="70" class="grid-line" />
+    <line x1="0" y1="160" x2="1200" y2="160" class="grid-line" />
+    <line x1="0" y1="250" x2="1200" y2="250" class="grid-line" />
+  </g>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle cx="1020" cy="120" r="140" fill="#6366f1" filter="url(#glow)" class="pulse-orb" opacity="0.4"/>
+  <circle cx="820" cy="260" r="100" fill="#06b6d4" filter="url(#glow)" class="pulse-orb" opacity="0.3"/>
+  <circle cx="150" cy="280" r="110" fill="#8b5cf6" filter="url(#glow)" class="pulse-orb" opacity="0.25"/>
+
+  <!-- Background Decorative Right-side Interactive Cards (stays behind title) -->
+  <g class="float-card-1" filter="url(#cardGlow)">
+    <!-- Device Frame / Testing Screen Card -->
+    <rect x="880" y="55" width="230" height="250" rx="20" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" backdrop-filter="blur(10px)"/>
+    <!-- Phone Notch / Bar -->
+    <rect x="955" y="65" width="80" height="6" rx="3" fill="rgba(255,255,255,0.2)"/>
+    
+    <!-- Test Matrix Indicators -->
+    <rect x="905" y="90" width="180" height="34" rx="8" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+    <circle cx="925" cy="107" r="5" fill="#10b981" class="test-pulse"/>
+    <text x="942" y="112" font-size="12" fill="#34d399" font-weight="600">iOS 18 E2E: PASSED</text>
+
+    <rect x="905" y="135" width="180" height="34" rx="8" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+    <circle cx="925" cy="152" r="5" fill="#10b981" class="test-pulse"/>
+    <text x="942" y="157" font-size="12" fill="#34d399" font-weight="600">Android 15: PASSED</text>
+
+    <rect x="905" y="180" width="180" height="34" rx="8" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
+    <circle cx="925" cy="197" r="5" fill="#38bdf8"/>
+    <text x="942" y="202" font-size="12" fill="#7dd3fc" font-weight="600">Maestro Flow: 142ms</text>
+
+    <!-- Animated Scan Line -->
+    <g clip-path="url(#deviceClip)">
+      <line x1="880" y1="120" x2="1110" y2="120" stroke="#38bdf8" stroke-width="2" opacity="0.7" class="scan-line" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Bottom Device Stats -->
+    <rect x="905" y="235" width="75" height="45" rx="6" fill="rgba(255,255,255,0.04)"/>
+    <text x="942" y="253" font-size="10" fill="#94a3b8" text-anchor="middle">PARALLEL</text>
+    <text x="942" y="271" font-size="13" fill="#ffffff" font-weight="bold" text-anchor="middle">64 Grid</text>
+
+    <rect x="990" y="235" width="95" height="45" rx="6" fill="rgba(255,255,255,0.04)"/>
+    <text x="1037" y="253" font-size="10" fill="#94a3b8" text-anchor="middle">COVERAGE</text>
+    <text x="1037" y="271" font-size="13" fill="#10b981" font-weight="bold" text-anchor="middle">99.8% OK</text>
+  </g>
+
+  <!-- Floating Floating Tech Badges (Right side background decoration) -->
+  <g class="float-card-2" filter="url(#cardGlow)">
+    <rect x="740" y="80" width="125" height="42" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" opacity="0.95"/>
+    <text x="760" y="106" font-size="13" fill="#38bdf8" font-weight="bold">⚡ Appium 2.x</text>
+  </g>
+
+  <g class="float-card-3" filter="url(#cardGlow)">
+    <rect x="710" y="150" width="155" height="42" rx="10" fill="#1e293b" stroke="#818cf8" stroke-width="1.2" opacity="0.95"/>
+    <text x="726" y="176" font-size="13" fill="#a5b4fc" font-weight="bold">🎯 Real Device Labs</text>
+  </g>
+
+  <g class="float-card-1" filter="url(#cardGlow)">
+    <rect x="750" y="220" width="120" height="42" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1.2" opacity="0.95"/>
+    <text x="770" y="246" font-size="13" fill="#e879f9" font-weight="bold">🤖 AI Self-Heal</text>
+  </g>
+
+  <!-- FOREGROUND HERO CONTENT (Ensured crystal clear and unobstructed) -->
+  <g transform="translate(65, 0)">
+    <!-- Pill Category Tag -->
+    <rect x="0" y="48" width="220" height="30" rx="15" fill="rgba(56, 189, 248, 0.12)" stroke="#0284c7" stroke-width="1.2"/>
+    <circle cx="16" cy="63" r="5" fill="#38bdf8"/>
+    <text x="30" y="68" font-size="11" font-weight="700" fill="#38bdf8" letter-spacing="1.2">CURATED QA ECOSYSTEM</text>
+
+    <!-- Main Title (Stays directly in foreground) -->
+    <text x="0" y="128" font-size="35" font-weight="900" fill="#ffffff" letter-spacing="-0.8">
+      Awesome Native Mobile App
+    </text>
+    <text x="0" y="172" font-size="35" font-weight="900" fill="url(#cyanPurple)" letter-spacing="-0.8">
+      QA &amp; Test Automation
+    </text>
+
+    <!-- Subtitle (Clear in foreground) -->
+    <text x="0" y="214" font-size="14.5" fill="#94a3b8" font-weight="400">
+      Enterprise SaaS Device Clouds &amp; High-Velocity Open-Source Frameworks
+    </text>
+    <text x="0" y="238" font-size="14.5" fill="#64748b" font-weight="400">
+      For iOS, Android, React Native &amp; Flutter • Real Device Labs &amp; Emulators
+    </text>
+
+    <!-- Feature Attribute Badges Bar -->
+    <g transform="translate(0, 272)">
+      <!-- Badge 1 -->
+      <rect x="0" y="0" width="135" height="30" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="12" y="19" font-size="12" fill="#e2e8f0" font-weight="500">📱 Real Device Labs</text>
+
+      <!-- Badge 2 -->
+      <rect x="145" y="0" width="140" height="30" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="157" y="19" font-size="12" fill="#e2e8f0" font-weight="500">🚀 Zero-Wait CI/CD</text>
+
+      <!-- Badge 3 -->
+      <rect x="295" y="0" width="145" height="30" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="307" y="19" font-size="12" fill="#e2e8f0" font-weight="500">🛡️ Self-Healing Tests</text>
+
+      <!-- Badge 4 -->
+      <rect x="450" y="0" width="130" height="30" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+      <text x="462" y="19" font-size="12" fill="#e2e8f0" font-weight="500">🌐 50+ Global SIMs</text>
+    </g>
+  </g>
+</svg>
